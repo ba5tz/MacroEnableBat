@@ -39,6 +39,7 @@ goto menu
 
 :aktifkan
 echo.
+rem - silahkan sesuaikan dengan Versi office yg dipakai 16.0 atau 14.0 dll
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Excel\Security" /v VBAWarnings /t REG_DWORD /d 1 /f
 echo          *****    Macro enable   ******
 pause
@@ -46,6 +47,7 @@ goto Menu
 
 :Matikan
 echo.
+rem - silahkan sesuaikan dengan Versi office yg dipakai 16.0 atau 14.0 dll
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Excel\Security" /v VBAWarnings /t REG_DWORD /d 2 /f
 echo          *****    Macro disable   ******
 pause
